@@ -21,4 +21,5 @@ It should print out your installed version of Maven
 ```
 mvn archetype:generate -DgroupId=com.mavenone.sample -DartifactId=maven-one -DarchetypeArtifactId=maven-archetype-quicstart -DinteractiveMode=false
 ```
-
+## Reference
+* [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) - Apache Maven Docs
