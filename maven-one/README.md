@@ -38,8 +38,11 @@ This is a list of the most common *default* lifecycle phases executed:
 * **verify**:  run any checks to verify the package is valid and meets quality criteria.
 * **install**: install the package into the local repository, for use as a dependency in other projects locally.
 * **deploy**: done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+Other builds:
 * **clean**: cleans up artifacts created by prior builds.
-* **site**: generates site documentation for this project.
+* **site**: generates site documentation for this project. (A major aim of the refactoring in Maven 3 was to decouple the Maven core from Doxia 
+and to allow arbitrary reporting systems to be developed. For this reason, all reporting related code has been removed from the core of Maven 3)
 
 An interesting thing to note is that phases and goals may be executed in sequence.
 ```
